@@ -7,6 +7,10 @@
     /* filter: invert(100%); */
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #000032;
     font-family: "Montserrat", sans-serif;
@@ -120,11 +124,15 @@ header{
     border: none;
     /* border: 1px solid white; */
     background-color: white;
-    color: black;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.6s;
     /* border-radius: 8px; */
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
 }
 
 .btn:hover{
@@ -219,6 +227,7 @@ header{
     bottom: 15px;
     transition: all 0.6s;
     box-shadow: 0px 0px 2px 2px white;
+    margin-bottom: 213px;
 }
 
 .arrow:hover{
@@ -226,6 +235,12 @@ header{
     width: 55px;
     opacity: 0.9;
     box-shadow: 0px 0px 5px 5px white;
+}
+
+.arrow a{
+    height: 35px;
+    width: 35px;
+    margin: auto;
 }
 
 .arrow img{
@@ -236,9 +251,9 @@ header{
 
 /* About Section */
 
-.abtheading{
+#abtheading{
+    padding-top: 37px;
     width: 80%;
-    padding-top: 250px;
     margin: 0px auto 20px auto;
     font-size: x-large;
     color: #15ff00;
@@ -256,6 +271,7 @@ header{
     'p s t c'
     'p s certi c'
     'aka app app m';
+    margin-bottom: 157px;
 }
 
 .bdr{
@@ -268,6 +284,7 @@ header{
 
 .bdr:hover{
     box-shadow: 0px 0px 18px 4px rgb(21, 255, 0);
+    background-color: rgb(225, 241, 255,0.9);
 }
 
 .about{
@@ -455,8 +472,8 @@ header{
     margin: auto;
 }
 
-.projectsheading{
-    padding-top: 240px;
+#projectsheading{
+    padding-top: 93px;
     font-size: x-large;
     color: #15ff00;
     width: 80%;
@@ -489,6 +506,7 @@ header{
 }
 .item:hover{
     font-weight: bold;
+    background-color: rgb(225, 241, 255,0.9);
     /* background: linear-gradient(to bottom right, #15ff00, #00ccff); */
 }
 
@@ -524,8 +542,8 @@ header{
 }
 
 #download{
-    width: 190px;
-    height: 34px;
+    width: 250px;
+    height: 30px;
     font-size: 15px;
     font-weight: lighter;
     border: none;
@@ -536,13 +554,36 @@ header{
     transition-property: all;
     transition-duration: 0.6s;
     /* border-radius: 8px; */
-    margin-left: 100px;
+    margin-left: 385px;
+    margin-top: 130px;
 }
 
 #download:hover{
-    width: 250px;
-    height: 40px;
+    width: 300px;
+    height: 34px;
+    margin-left: 355px;
 }
 
-/* #portfolio img{
-} */
+/* End Section */
+
+.end{
+    width: 80%;
+    margin: auto;
+    font-size: small;
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+
+.end a{
+    color: #15ff00;
+}
+
+/* Footer */
+
+footer{
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+}
