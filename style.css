@@ -28,7 +28,8 @@ body{
     margin: auto;
     border: 2px solid rgba(225, 225, 225, 0.1);
     background-color: rgb(36, 36, 36);
-    box-shadow: 0px 0px 10px 0px white;
+    filter: invert(100%);
+    box-shadow: 0px 0px 15px 0px white;
     border-radius: 20px;
     font-size: 16px;
     position: sticky;
@@ -122,11 +123,12 @@ header{
     font-size: 15px;
     font-weight: lighter;
     border: none;
-    /* border: 1px solid white; */
-    background-color: white;
+    border: 1px solid black;
+    background-color: rgb(21, 255, 0);
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.6s;
+    border-radius: 5px;
     /* border-radius: 8px; */
 }
 
@@ -138,11 +140,11 @@ header{
 .btn:hover{
     width: 250px;
     height: 40px;
+    font-size: 16px;
 }
 
 .conimg{
     /* filter: invert(100%); */
-    mix-blend-mode: multiply;
     height: 13px;
     margin-right: 10px;
     margin-top: 4px;
