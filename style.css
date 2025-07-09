@@ -1,0 +1,548 @@
+/* CSS Reset */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* filter: invert(100%); */
+}
+
+body{
+    background-color: #000032;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    color: white;
+}
+
+
+/* Navbar */
+
+
+#navbar{
+    width: 633px;
+    height: 43px;
+    margin: auto;
+    border: 2px solid rgba(225, 225, 225, 0.1);
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0px 0px 10px 0px white;
+    border-radius: 20px;
+    font-size: 16px;
+    position: sticky;
+    top: 40px;
+    z-index: 1;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 2px 31px;
+    padding: 10px 7px;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+
+#navbar ul li:hover{
+    font-size: 17px;
+    padding: 10px 3px;
+}
+
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navimg{
+    width: 14px;
+    filter: invert(100%);
+    margin-right: 10px;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+
+#l1:hover #i1{
+    width: 17px;
+}
+
+#l2:hover #i2{
+    width: 17px;
+}
+
+#l3:hover #i3{
+    width: 17px;
+}
+
+#l4:hover #i4{
+    width: 17px;
+}
+
+
+/* Header Part */
+
+
+header{
+    display: flex;
+    width: 100%;
+    height: 120px;
+}
+
+/* logo */
+
+.logo{
+    position: relative;
+    bottom: 47px;
+    width: 20%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+/* Contact Button */
+
+.contact{
+    position: relative;
+    bottom: 43px;
+    width: 20%;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.btn{
+    width: 190px;
+    height: 34px;
+    font-size: 15px;
+    font-weight: lighter;
+    border: none;
+    /* border: 1px solid white; */
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.6s;
+    /* border-radius: 8px; */
+}
+
+.btn:hover{
+    width: 250px;
+    height: 40px;
+}
+
+.conimg{
+    /* filter: invert(100%); */
+    mix-blend-mode: multiply;
+    height: 13px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+
+/* Main Body */
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 1310px;
+    /* border: 2px solid rebeccapurple; */
+    margin: 0px auto;
+    align-items: center;
+}
+
+.topheading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#hello{
+    filter: invert(100%);
+    width: 60px;
+    margin-right: 10px;
+}
+
+.topheading h1{
+    font-weight: 200;
+}
+
+.bgheading{
+    font-family: "Poppins", sans-serif;
+    font-size: 9rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#p1{
+    -webkit-text-stroke: 4px white;
+    color: transparent;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#p1:hover{
+    -webkit-text-stroke: 4px black;
+    color: white;
+}
+
+#p2{
+    -webkit-text-stroke: 0px;
+    color: rgb(21, 255, 0);;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#p1:hover~#p2{
+    -webkit-text-stroke: 4px rgb(21, 255, 0);;
+    color: transparent;
+}
+
+/* Division 1 */
+
+
+.arrow{
+    border: 4px solid black;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    background-color: white;
+    border-radius: 35px;
+    opacity: 0.6;
+    position: sticky;
+    bottom: 15px;
+    transition: all 0.6s;
+    box-shadow: 0px 0px 2px 2px white;
+}
+
+.arrow:hover{
+    height: 55px;
+    width: 55px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.arrow img{
+    height: 35px;
+    width: 35px;
+    margin: auto;
+}
+
+/* About Section */
+
+.abtheading{
+    width: 80%;
+    padding-top: 250px;
+    margin: 0px auto 20px auto;
+    font-size: x-large;
+    color: #15ff00;
+}
+
+#aboutsection{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: 
+    'p a a l'
+    'p s t c'
+    'p s certi c'
+    'aka app app m';
+}
+
+.bdr{
+    background-color: rgb(225, 241, 255,0.7);
+    /* border: 2px solid black; */
+    color: black;
+    border-radius: 10px;
+    transition: all 0.6s;
+}
+
+.bdr:hover{
+    box-shadow: 0px 0px 18px 4px rgb(21, 255, 0);
+}
+
+.about{
+    grid-area: a;
+    transition-property: all;
+    transition-duration: 0.6s;
+    padding: 10px;
+}
+.about h1{
+    font-size: 42px;
+}
+.about p{
+    margin-top: 15px;
+}
+
+.app{
+    grid-area: app;
+    transition-property: all;
+    transition-duration: 0.6s;
+    padding: 15px;
+}
+.app h1{
+    font-size: 42px;
+}
+.tools{
+    width: 30px;
+    padding: 12px;
+}
+
+.certification{
+    grid-area: certi;
+    padding: 15px;
+}
+.certification h1{
+    font-size: 37px;
+    padding-top: 5px;
+}
+#linkedin{
+    padding-left: 235px;
+    width: 24px;
+}
+
+.clients{
+    grid-area: c;
+    transition-property: all;
+    transition-duration: 0.6s;
+    padding: 15px;
+}
+.clients h1{
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.clients p{
+    margin: 8px 0px;
+}
+
+.impressed{
+    grid-area: aka;
+    transition-property: all;
+    transition-duration: 0.6s;
+    padding: 15px;
+}
+.impressed a{
+    text-decoration: none;
+    color: black;
+}
+.impressed h1{
+    font-size: 42px;
+}
+.impressed p{
+    margin-top: 15px;
+}
+
+.links{
+    grid-area: l;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.links h1{
+    font-size: 42px;
+    margin: 5px;
+}
+.links h1 img{
+    height: 37px;
+    margin: 0px 10px 0px 6px;
+}
+#behance{
+    margin: 0px 0px 0px 12px;
+}
+.links img{
+    height: 37px;
+}
+#fiverr{
+    height: 20px;
+    margin: 0px 0px 32px 8px;
+}
+#yt {
+    margin: 25px 10px 23px 25px;
+}
+#insta{
+    margin: 25px 17px 25px 20px;
+}
+#x{
+    margin: 25px 20px 25px 10px;
+}
+
+.more{
+    grid-area: m;
+    transition-property: all;
+    transition-duration: 0.6s;
+    padding: 15px;
+}
+.more a{
+    text-decoration: none;
+    color: black;
+}
+.more h1{
+    font-size: 36px;
+}
+.more p{
+    margin-top: 8px;
+}
+
+.picture{
+    grid-area: p;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+.picture img{
+    width: 100%;
+    position: relative;
+    top: 199px;
+}
+
+.skills{
+    grid-area: s;
+    transition-property: all;
+    transition-duration: 0.6s;
+    background: #15ff00;
+    background: linear-gradient(to bottom right, #15ff00, #00ccff);
+    /* border: 10px solid rgb(17, 200, 0); */
+    /* border-radius: 1px; */
+    overflow: hidden;
+    padding: 15px;
+}
+.skills:hover{
+    box-shadow: none;
+}
+.skills h1{
+    font-size: 42px;
+}
+.skills ul{
+    margin-top: 15px;
+}
+.skills ul li{
+    list-style: none;
+    padding: 5px;
+    font-size: 17px;
+    transition: all 0.6s;
+}
+.skills ul li:hover{
+    font-weight: bold;
+}
+
+.time{
+    grid-area: t;
+    transition-property: all;
+    transition-duration: 0.6s;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.time h1{
+    font-size: 37px;
+}
+.time p{
+    text-align: right;
+    padding-top: 10px;
+}
+
+/* Projects Section */
+
+.projects{
+    width: 80%;
+    margin: auto;
+}
+
+.projectsheading{
+    padding-top: 240px;
+    font-size: x-large;
+    color: #15ff00;
+    width: 80%;
+    margin: auto;
+}
+
+.subheading{
+    text-align: right;
+}
+
+.subheading a{
+    color: white;
+}
+
+.projects ul{
+    margin: 20px 0px;
+}
+
+.item{
+    height: auto;
+    color: black;
+    font-size: 22px;
+    list-style: none;
+    margin: 5px 0px;
+    padding: 20px;
+    /* border: 2px solid white; */
+    background-color: rgb(225, 241, 255,0.7);
+    transition: all 0.6s;
+    border-radius: 8px;
+}
+.item:hover{
+    font-weight: bold;
+    /* background: linear-gradient(to bottom right, #15ff00, #00ccff); */
+}
+
+.description{
+    margin-top: 7px;
+    display: none;
+    font-size: 17px;
+}
+
+.item:hover .description{
+    display: block;
+    font-weight: normal;
+    transition: all 01s;
+}
+
+/* Portfolio Section */
+
+#portfolio{
+    width: 80%;
+    margin: auto;
+    font-size: x-large;
+    display: flex;
+    margin-top: 240px;
+}
+
+#portfolio h1{
+    color: #15ff00;
+    width: 420px;
+}
+
+#portfolio h1 span{
+    color: white;
+}
+
+#download{
+    width: 190px;
+    height: 34px;
+    font-size: 15px;
+    font-weight: lighter;
+    border: none;
+    /* border: 1px solid white; */
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.6s;
+    /* border-radius: 8px; */
+    margin-left: 100px;
+}
+
+#download:hover{
+    width: 250px;
+    height: 40px;
+}
+
+/* #portfolio img{
+} */
