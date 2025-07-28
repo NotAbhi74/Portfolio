@@ -472,6 +472,7 @@ header{
 .projects{
     width: 80%;
     margin: auto;
+    height: 250px;
 }
 
 #projectsheading{
@@ -516,12 +517,12 @@ header{
     margin-top: 7px;
     display: none;
     font-size: 17px;
+    transition: all 3s;
 }
 
 .item:hover .description{
     display: block;
     font-weight: normal;
-    transition: all 01s;
 }
 
 /* Portfolio Section */
